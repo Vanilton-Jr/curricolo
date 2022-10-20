@@ -1,0 +1,67 @@
+header {
+    position: fixed;
+    background-color: rgb(44, 44, 44);
+    color: aliceblue;
+    width: 100%;
+    height: 5vw;
+    padding: 5vw 5vw;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0vw;
+}
+
+#nome {
+    position: relative;
+    font-size: 2.7vw;
+    top: -1.9vw;
+    left: -2vw;
+}
+
+#contato {
+    position: relative;
+    left: 70vw;
+    top: -5vw;
+}
+
+#amail {
+    color: aliceblue;
+    text-decoration: none;
+    width: 1.1vw;
+    height: 2.4vw;
+    display: inline-flex;
+    overflow: hidden;
+    transition: 1s;
+
+}
+
+#amail:hover{
+    animation: expandir 1s forwards;
+
+}
+
+#cellphone{
+    color: aliceblue;
+    text-decoration: none;
+    width: .8vw;
+    height: 1.1vw;
+    display: inline-flex;
+    overflow: hidden;
+    transition: 1s;
+}
+
+#cellphone:hover{
+    animation: expandir 1s forwards;
+}
+
+@keyframes expandir {
+    from {
+        width: 1.1vw;
+        content-visibility: visible !important;
+    }
+    to{
+        width: 19vw;
+    }
+}
