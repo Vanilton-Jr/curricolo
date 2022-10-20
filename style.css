@@ -24,17 +24,16 @@ body {
     position: relative;
     left: 70vw;
     top: -5vw;
+    font-size: 1vw;
 }
 
 #amail {
     color: aliceblue;
     text-decoration: none;
-    width: 1.1vw;
+    width: 1.0vw;
     height: 2.4vw;
     display: inline-flex;
     overflow: hidden;
-    transition: 1s;
-
 }
 
 #amail:hover{
@@ -49,7 +48,6 @@ body {
     height: 1.1vw;
     display: inline-flex;
     overflow: hidden;
-    transition: 1s;
 }
 
 #cellphone:hover{
