@@ -1,0 +1,126 @@
+header {
+    position: relative;
+    background-color: rgb(44, 44, 44);
+    color: aliceblue;
+    width: 100%;
+    height: 5vw;
+    padding: 5vw 5vw;
+    overflow: hidden;
+    font-family: Arial, sans-serif;
+}
+
+body {
+    margin: 0vw;
+    overflow-x: hidden;
+}
+
+hr{
+    width: 90%;
+   border-color: rgb(44, 44, 44);
+
+}
+
+#aba {
+    position: absolute;
+    width: 9.5vw;
+    height: 8vw;
+    top: 0;
+    right: 10vw;
+    z-index: 3;
+    background-image: linear-gradient(to bottom right, transparent 50%, rgb(91, 156, 253) 0);
+    background-repeat: no-repeat;
+    background-position: left, right;
+    transform: rotateX(180deg);
+}
+
+#nome {
+    position: relative;
+    font-size: 2.7vw;
+    top: -1.9vw;
+    left: -2vw;
+}
+
+/* Contato ------------------------------------ */
+#contato {
+    position: relative;
+    left: 70vw;
+    top: -12vw;
+    font-size: 1.3vw;
+}
+
+#mail_butt {
+    position: relative;
+    right: .12vw;
+}
+
+#amail {
+    color: aliceblue;
+    text-decoration: none;
+}    
+
+#mail {
+    --tamanho: 16.8vw;
+    position: relative;
+    right: 9.6vw;
+    width: 0;
+    height: 1.5vw;
+    display: inline-flex;
+    overflow: hidden;
+    margin-top: 0;
+    margin-bottom: .5vw;
+    background-color: rgb(49, 49, 49);
+}    
+
+#cellphone {
+    --tamanho: 8.8vw;
+    color: aliceblue;
+    text-decoration: none;
+    width: 0;
+    height: 1.4vw;
+    display: inline-flex;
+    overflow: hidden;
+    margin-top: 0;   
+    margin-bottom: .5vw;
+    position: relative;
+    background-color: rgb(49, 49, 49);
+    right: 6vw;
+}
+
+#endereço {
+    --tamanho: 33.2vw;
+    width: 0vw;
+    height: 1.4vw;
+    overflow: hidden;
+    margin-top: 0;
+    margin-bottom: 0;
+    position: relative;
+    right: 15.9vw;
+    background-color: rgb(49, 49, 49);
+}
+
+#phone_butt:hover~#cellphone,
+#mail_butt:hover ~ #mail,
+#endereço_butt:hover+#endereço {
+    animation: expandir 1s forwards;
+}
+
+@keyframes expandir {
+    from {
+        width: 0;
+        padding: 0;
+    }
+
+    to {
+        width: var(--tamanho);
+        padding-left: 1.5vw;
+        padding-right: 1.5vw;
+    }
+}
+
+/* -------------------------------------------------------------- BODY--------------------------------------------------------- */
+#apresentacao {
+    position: relative;
+    left: 3vw;
+    width: fit-content;
+}
+
